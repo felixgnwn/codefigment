@@ -4,7 +4,7 @@ import { MdSettings, MdLogout } from "react-icons/md";
 
 function Navbar() {
   return (
-    <div className="sidebar bg-slate-700 h-screen p-6 flex flex-col justify-between w-2/12">
+    <div className="sidebar bg-blue-500 h-screen p-6 flex flex-col justify-between w-2/12">
       <div className="app-name">
         <h1 className="font-bold text-2xl">Codefigment</h1>
       </div>
