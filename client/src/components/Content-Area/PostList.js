@@ -5,7 +5,7 @@ import {
   createPost,
   updatePost,
   deletePost,
-} from "../services/PostService";
+} from "../../services/PostService";
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -65,10 +65,8 @@ const PostList = () => {
 
   return (
     <div>
-      <h2>Posts</h2>
-
       {posts.map((post) => (
-        <div key={post._id}>
+        <div key={post._id} className="rounded-xl bg-white p-2 mb-4">
           <h3>{post.title}</h3>
           <p>{post.content}</p>
           <p>

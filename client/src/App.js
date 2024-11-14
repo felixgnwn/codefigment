@@ -1,12 +1,17 @@
 // client/src/App.js
 import React from "react";
-import PostList from "./components/PostList";
+import Navbar from "./components/Navbar";
+import Suggestion from "./components/Suggestion";
+import ContentArea from "./components/Content-Area/ContentArea";
 
 function App() {
   return (
     <div className="App">
-      <h1>My Social Media App</h1>
-      <PostList />
+      <div className="flex flex-row justify-between">
+        <Navbar />
+        <ContentArea />
+        <Suggestion />
+      </div>
     </div>
   );
 }
